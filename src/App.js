@@ -1,6 +1,7 @@
 import { RiHomeHeartFill } from "react-icons/ri";
 import MyClock from "./02/MyClock";
 import "./App.css";
+import Traffic from "./06_useEffct1/Traffic";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       </header>
       <main className="grow w-full flex justify-center items-center overflow-y-auto">
         {/* <Lotto /> */}
-        <MyClock />
+        {/* <MyClock /> */}
+        <Traffic />
       </main>
       <footer className="flex justify-center items-center h-20  bg-black text-slate-200">
         devock
