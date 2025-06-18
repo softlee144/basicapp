@@ -2,7 +2,7 @@ import clock from "./clockImage.png";
 
 function MyClockImage() {
   return (
-    <div className="c2">
+    <div>
       <img src={clock} alt="clock" />
     </div>
   );

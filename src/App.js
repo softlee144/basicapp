@@ -2,7 +2,6 @@ import { RiHomeHeartFill } from "react-icons/ri";
 import MyList from "./04/MyList";
 import "./App.css";
 import Lotto from "./05_lotto/Lotto";
-import MyClock from "./02/MyClock";
 
 function App() {
   return (
@@ -14,8 +13,7 @@ function App() {
         </p>
       </header>
       <main className="grow w-full flex justify-center items-center overflow-y-auto">
-        {/* <Lotto /> */}
-        <MyClock />
+        <Lotto />
       </main>
       <footer className="flex justify-center items-center h-20  bg-black text-slate-200">
         devock
