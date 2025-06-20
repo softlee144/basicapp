@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import TrafficNav from "./TrafficNav";
 
 export default function Traffic() {
-  /* 1. 상태 정의부 */
+  /* 1. 상태(변수) 정의부 */
   // 전체 데이터 (fetch 결과)
   const [tdata, setTdata] = useState();
 

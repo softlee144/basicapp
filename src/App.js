@@ -5,6 +5,7 @@ import { RiHomeHeartFill } from "react-icons/ri";
 // import MyRef from "./07_useRef/MyRef";
 // import MyRefAdd from "./07_useRef/MyRefAdd";
 import Gallery from "./08_openapi/Gallery";
+import RouteMain from "./09_router/RouteMain";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         </p>
       </header>
       <main className="grow w-full flex justify-center items-center overflow-y-auto">
-        <Gallery />
+        <RouteMain />
       </main>
       <footer className="flex justify-center items-center h-20  bg-black text-slate-200">
         devock
