@@ -1,7 +1,10 @@
 import { RiHomeHeartFill } from "react-icons/ri";
-import MyClock from "./02/MyClock";
-import "./App.css";
-import Traffic from "./06_useEffct1/Traffic";
+// import MyClock from "./02/MyClock";
+// import "./App.css";
+// import Traffic from "./06_useEffct1/Traffic";
+// import MyRef from "./07_useRef/MyRef";
+// import MyRefAdd from "./07_useRef/MyRefAdd";
+import Gallery from "./08_openapi/Gallery";
 
 function App() {
   return (
@@ -13,9 +16,7 @@ function App() {
         </p>
       </header>
       <main className="grow w-full flex justify-center items-center overflow-y-auto">
-        {/* <Lotto /> */}
-        {/* <MyClock /> */}
-        <Traffic />
+        <Gallery />
       </main>
       <footer className="flex justify-center items-center h-20  bg-black text-slate-200">
         devock
