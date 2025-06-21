@@ -7,9 +7,20 @@ export default function RecoilMyDiv3({ d1, d2, d3 }) {
 
   const handleUp = () => {
     setN(n + 1);
+    localStorage.setItem("n", n);
   };
   const handleDown = () => {
-    setN(n-1);
+    setN(n - 1);
+    localStorage.setItem("n", n);
+  };
+
+  const handleSave = () => {
+    localStorage.setItem("n", n);
+  };
+
+  const handleRemove = () => {
+    localStorage.removeItem("n", n);
+    setN(0);
   };
 
   return (
@@ -22,6 +33,8 @@ export default function RecoilMyDiv3({ d1, d2, d3 }) {
       <div>
         <TailButton caption="증가" bcolor="blue" handleClick={handleUp} />
         <TailButton caption="감소" bcolor="blue" handleClick={handleDown} />
+        {/* TailButton caption="저장" bcolor="blue" handleClick={handleSave} /> */}
+        <TailButton caption="삭제" bcolor="blue" handleClick={handleRemove} />
       </div>
     </div>
   );

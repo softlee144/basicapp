@@ -1,14 +1,21 @@
 import RecoilMyDiv2 from "./RecoilMyDiv2";
 import { AtomN, AtomN2 } from "./AtomN";
-import { useRecoilValue } from "recoil";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { useEffect } from "react";
 
 export default function RecoilMyDiv1() {
   const d1 = "div1";
   const d2 = "div2";
   const d3 = "div3";
 
-  const n = useRecoilValue(AtomN);
+  const [n, setN] = useRecoilState(AtomN);
   const n2 = useRecoilValue(AtomN2);
+
+  useEffect(() => {
+    if (localStorage.getItem("n")) {
+      setN(parseInt(localStorage.getItem("n")));
+    }
+  }, []);
 
   return (
     <div
